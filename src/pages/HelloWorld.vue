@@ -15,7 +15,6 @@
     </div>
     <ProductList
         :products="products"
-        @getImageStyle="getImageStyle"
     />
   </div>
 </template>
@@ -37,11 +36,13 @@ export default {
     }
   },
   created () {
+    this.startLoading(true)
     this.getData('categories').then((data)=>{
       this.categories = data.items
-    })
-    this.getData('products').then((data)=>{
-      this.products = data.items
+      this.getData('products').then((data)=>{
+        this.products = data.items
+        this.startLoading(false)
+      })
     })
   },
 }

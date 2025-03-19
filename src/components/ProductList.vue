@@ -1,5 +1,5 @@
 <template>
-  <div class="row m-0">
+  <div class="row m-0 product-list">
     <div
         v-for="product in products"
         :key="product.id"

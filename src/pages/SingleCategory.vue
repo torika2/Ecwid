@@ -8,7 +8,6 @@
       ></div>
       <ProductList
           :products="category.products"
-          @getImageStyle="getImageStyle"
       />
     </div>
   </div>
@@ -26,6 +25,7 @@ export default {
     }
   },
   created () {
+    this.startLoading(true)
     this.getData('categories', '/' + this.categoryId).then((data)=>{
       this.category = data
       this.getData('products').then((data)=>{
@@ -50,6 +50,7 @@ export default {
             if (product_category.id === category.id) {
               category.products.push(product)
               this.products = []
+              this.startLoading(false)
             }
           })
         })

@@ -6,4 +6,17 @@
 }
 .header-fixed{
     left:0px;
+    z-index: 3;
+}
+.loader-main-div{
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    background: #ffffff;
+}
+.spinner-border{
+    height: 60px;
+    width: 60px;
 }

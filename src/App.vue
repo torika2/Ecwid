@@ -1,27 +1,20 @@
 <template>
-  <div class="container position-relative">
-    <div class="header">
-      <div class="position-fixed bg-dark w-100 text-white header-fixed px-3 d-flex align-items-center justify-content-between">
-        <div class="d-flex align-items-center justify-content-between">
-          <a
-              href="/"
-              class="d-flex align-items-center text-white px-4"
-          >
-            <img src="./assets/logo.png" height="30" alt="">
-          </a>
-        </div>
-        <div>
-          <i class="bi bi-cart"></i>
-        </div>
+  <div class="container position-relative pb-5">
+    <div id="loader" class="position-absolute loader-main-div d-flex align-items-center justify-content-center">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
       </div>
     </div>
+    <MainHeader/>
     <router-view></router-view>
   </div>
 </template>
 <script>
 import "@/assets/css/HelloWorld.css"
+import MainHeader from "@/components/MainHeader.vue"
 
 export default {
   name: 'App',
+  components: {MainHeader},
 }
 </script>

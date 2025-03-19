@@ -4,7 +4,7 @@
       <div class="d-flex align-items-center justify-content-between">
         <a
             href="/"
-            class="d-flex align-items-center text-white px-4"
+            class="vue-logo d-flex align-items-center text-white px-4"
         >
           <img src="@/assets/images/logo.png" height="30" alt="">
         </a>

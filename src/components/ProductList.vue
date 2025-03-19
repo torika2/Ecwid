@@ -1,13 +1,13 @@
 <template>
   <div class="row m-0 product-list">
     <div
+        class="col-md-4 card d-flex flex-column justify-content-between product-item"
         v-for="product in products"
         :key="product.id"
-        class="col-md-4 card d-flex flex-column justify-content-between"
     >
       <div
           @click="$router.push({ path: '/products/'+product.id })"
-          class="rounded my-3"
+          class="rounded my-3 product-image cursor-pointer"
           :style="getImageStyle(product.originalImageUrl, '350px')"
       ></div>
       <div class="pb-2">

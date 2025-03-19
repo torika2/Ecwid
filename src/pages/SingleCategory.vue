@@ -21,7 +21,7 @@ export default {
   data(){
     return {
       products : [],
-      category : [],
+      category : []
     }
   },
   created () {
@@ -54,7 +54,7 @@ export default {
             }
           })
         })
-    },
-  },
+    }
+  }
 }
 </script>

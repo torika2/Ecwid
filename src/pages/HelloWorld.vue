@@ -18,7 +18,6 @@
     />
   </div>
 </template>
-
 <script>
 import apiHelper from "@/helpers/apiHelper"
 import ProductList from "@/components/ProductList.vue"
@@ -44,6 +43,6 @@ export default {
         this.startLoading(false)
       })
     })
-  },
+  }
 }
 </script>

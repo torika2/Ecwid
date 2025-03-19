@@ -6,6 +6,7 @@
         class="col-md-4 card d-flex flex-column justify-content-between"
     >
       <div
+          @click="$router.push({ path: '/products/'+product.id })"
           class="rounded my-3"
           :style="getImageStyle(product.originalImageUrl, '350px')"
       ></div>

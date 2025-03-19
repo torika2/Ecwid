@@ -1,4 +1,4 @@
-# hyrule-jobs
+# Vue 3
 
 ## Project setup
 ```

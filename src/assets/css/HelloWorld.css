@@ -37,3 +37,17 @@
 .right-arrow{
     right: 0px;
 }
+.category-item{
+    height: 100px;
+    background: rgb(159,159,159);
+    background: linear-gradient(0deg, rgba(159,159,159,1) 0%, rgba(52,58,64,1) 94%);
+}
+.place-your-order{
+    bottom: 24vh;
+    right: 0px;
+}
+.success-order-message{
+    background: #00800090;
+    color: white;
+    height: 30vh;
+}

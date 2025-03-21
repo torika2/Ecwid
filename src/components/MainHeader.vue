@@ -10,10 +10,13 @@
         </a>
       </div>
       <div class="d-flex align-items-center">
-        <div class="font-weight-bold px-2">
+        <div class="font-weight-bold px-2" id="cart-item-counter">
           0
         </div>
-        <div>
+        <div
+            @click="$router.push('/shopping-cart')"
+            class="cursor-pointer"
+        >
           <img src="@/assets/images/cart.svg" height="30" alt="">
         </div>
       </div>

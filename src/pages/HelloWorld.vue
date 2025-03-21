@@ -2,14 +2,14 @@
   <div>
     <div class="row m-0 border-bottom border-danger">
       <div
-          class="col-md-4 col-lg-3 "
+          class="col-md-6"
           v-for="category in categories"
           :key="category.id"
       >
         <a
             :href="`/category/${category.id}`"
             v-text="category.name"
-            class="btn btn-dark my-2 cursor-pointer py-2 px-4 text-center"
+            class="w-100 my-2 cursor-pointer text-white py-2 px-4 text-center category-item d-flex align-items-center justify-content-center"
         ></a>
       </div>
     </div>
@@ -20,13 +20,15 @@
 </template>
 <script>
 import apiHelper from "@/helpers/apiHelper"
+import uiHelper from "@/helpers/uiHelper"
 import ProductList from "@/components/ProductList.vue"
 
 export default {
   name: 'HelloWorld',
   components: {ProductList},
   mixins : [
-      apiHelper
+      apiHelper,
+      uiHelper
   ],
   data(){
     return {

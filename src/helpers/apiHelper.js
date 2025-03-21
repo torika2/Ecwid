@@ -11,12 +11,5 @@ export default {
                 return response.data
             })
         },
-        startLoading(bool = true){
-            document.getElementById('loader')
-                ?.setAttribute(
-                'style',
-                `display:${bool ? 'flex!important' : 'none!important'}`
-                )
-        },
     }
 }

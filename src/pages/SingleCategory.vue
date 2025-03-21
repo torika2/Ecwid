@@ -14,10 +14,14 @@
 </template>
 <script>
 import apiHelper from "@/helpers/apiHelper"
-import ProductList from "@/components/ProductList.vue";
+import uiHelper from "@/helpers/uiHelper"
+import ProductList from "@/components/ProductList.vue"
 export default {
   components: {ProductList},
-  mixins: [apiHelper],
+  mixins: [
+      apiHelper,
+      uiHelper
+  ],
   data(){
     return {
       products : [],
